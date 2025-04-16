@@ -15,6 +15,12 @@ export default function RandomProduct() {
 	// implement a randomize function that returns a random integer from 1 to 20 and updates the productId state variable
 	// function randomize() {}
 
+	function randomize() {
+		const randomId = Math.floor(Math.random() * 20) + 1; 
+		setProductId(randomId); 
+	  }
+	  
+
 	return (
 		<div className="h-screen flex flex-col justify-center items-center ">
 			<div className="max-w-md flex flex-col items-center">
